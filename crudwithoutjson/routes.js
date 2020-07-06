@@ -5,41 +5,40 @@ var app = express();
 
 var name1= [{"id":1,"name":"anu","age":12},{"id":2,"name":"Irani","age":12}]
 
-app.get('/get_data', function (req, res) {  
-   res.send(name1); 
-}) 
+// app.get('/get_data', function (req, res) {  
+//    res.send(name1); 
+// }) 
 
-app.listen(8688)
+// app.listen(8688)
 
 
-app.get('/get_d',function(req,res){
-   res.send("neha")
-})
+// app.get('/get_d',function(req,res){
+//    res.send("neha")
+// })
 
-var server=app.listen(8421,function(){
-   var port=server.address().port
-   console.log(port,"idbf")
-console.log("showing ,vnva",port)
-})
+// var server=app.listen(8421,function(){
+//    var port=server.address().port
+//    console.log(port,"idbf")
+// console.log("showing ,vnva",port)
+// })
 
-app.listen(8775)
   
    // ----------------------------------------------------------------
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
-app.post('/postroute',function(req,res){
-   var response1 ={ 
-      name:req.body.name,
-      age:req.body.age
-   }
-   name1.push(response1)
-   res.send(name1)                   
-   console.log(name1) 
-}) 
+// app.post('/postroute',function(req,res){
+//    var response1 ={ 
+//       name:req.body.name,
+//       age:req.body.age
+//    }
+//    name1.push(response1)
+//    res.send(name1)                   
+//    console.log(name1) 
+// }) 
 
-app.listen(5000) 
+// app.listen(5000) 
 
 
 list=[]
@@ -73,8 +72,8 @@ app.put('/editroute/:id/',function(req,res){
   } 
    console.log(name1)
    res.send(name1) 
-   console.log(name1)
 })
+
 var server = app.listen(8056, function () {
    var port = server.address().port
    console.log(port,'jjj');
