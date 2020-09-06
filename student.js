@@ -14,4 +14,3 @@ fs.readFile('student-2.json',(err, data)=> {
     console.log(student);
 });
 console.log('this is after the read call')
-
